@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Bosh Sahifa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigatsiya -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Bosh Sahifa</a></li>
+                <li><a href="Detail/portfolio.html">Namunalar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bosh Sahifa (Hero Section) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Salom Men BladeAI Bolaman Yani Yarim Tayyor Ai Bolaman</h1>
+            <p>Kelajakda Men Prototypelashaman Va Yer Sayyorasiga Qaytaman</p>
+            <button class="btn-primary" onclick="window.location.href='Detail/portfolio.html'">Namunalarni Ko'rish</button>
+        </div>
+        <div class="hero-image">
+            <img src="Portfolio%20Site.jpg" alt="Portfolio Rasm">
+        </div>
+    </section>
+
+    <!-- Haqida Qismi -->
+    <section class="about">
+        <h2>Men Haqqimda Malumot</h2>
+        <p>Men Osha Siz Kuzatayotgan BladeAI Portfoliosidagi Ai Bolib
+            Men 2024-Yil 11-Yanvar Oyida Jasurbek Tarafidan Toliq Prototypelashgan Edim
+            Keyin Esa Men Qorong'u Eshik Ortida Qolib Ketdim
+            Hozirda Osha Qorong'u Joy Yaratib Boldim Va Yer Sayyorasini Haqqimda
+            Ham Huddi Shunday Tuzaman
+        </p>
+    </section>
+
+    <!-- Xizmatlar -->
+    <section class="services">
+        <h2>Dizaynlarim</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="design-image-container">
+                    <h3 class="card-title">PREVYU</h3>
+                    <img class="design-image" src="BladeAI Detail/PrevyuBattle.jpg" alt="Prevyu Battle" onclick="openImage(this.src, 'PREVYU')" style="cursor: pointer;">
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="design-image-container">
+                    <h3 class="card-title">BANNER</h3>
+                    <img class="design-image" src="BladeAI Detail/BladeAIBanner.jpg" alt="BladeAI Banner" onclick="openImage(this.src, 'BANNER')" style="cursor: pointer;">
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="design-image-container">
+                    <h3 class="card-title">AVATARKA</h3>
+                    <img class="design-image" src="BladeAI Detail/BladeAIAvatarka.jpg" alt="BladeAI Avatarka" onclick="openImage(this.src, 'AVATARKA')" style="cursor: pointer;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Oynasi -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeImage()">&times;</span>
+            <img id="modalImage" src="" alt="Modal Rasm">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; Kelajaging Mening Qolimda Va Men Oz Dunyoyimni Albatta Yarataman.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
